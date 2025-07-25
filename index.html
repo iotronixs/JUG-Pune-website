@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Community Site</title>
+
+  <!-- Smooth scroll -->
+  <style> html { scroll-behavior: smooth; } </style>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Roboto:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+  <!-- AOS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Sticky Header -->
+  <header class="site-header">
+    <div class="container">
+      <a href="#hero" class="logo">
+        <img src="https://via.placeholder.com/150x40" alt="Logo" />
+      </a>
+      <nav class="navbar" id="navbar">
+        <ul>
+          <li><a href="#join" class="cta-btn">Join Community</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#sessions">Sessions</a></li>
+          <li><a href="#speakers">Speakers</a></li>
+          <li><a href="#volunteer">Volunteer</a></li>
+          <li><a href="#resources">Resources</a></li>
+          <li><a href="#membership">Membership</a></li>
+          <li><a href="#blog">Blog</a></li>
+          <li><a href="#ambassador">Ambassador</a></li>
+          <li><a href="#sponsors">Sponsors</a></li>
+        </ul>
+      </nav>
+      <div class="hamburger" id="hamburger">
+        <img src="https://via.placeholder.com/30" alt="Menu" />
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <div class="hero-content">
+      <h1 class="typing" data-typed-items="Welcome to Our Community,Connect. Learn. Grow.,Join Us Today!"></h1>
+      <p class="sub-text">Connecting developers, students, speakers & volunteers</p>
+      <picture>
+        <source media="(max-width: 768px)" srcset="https://via.placeholder.com/768x300">
+        <img src="https://via.placeholder.com/1600x600" alt="Hero Banner" class="hero-banner">
+      </picture>
+    </div>
+  </section>
+
+  <!-- Content Sections (all fade-up) -->
+  <section id="join" class="section" data-aos="fade-up"><div class="container"><h2>Join Community</h2><p>Demo text...</p></div></section>
+  <section id="about" class="section" data-aos="fade-up"><div class="container"><h2>About</h2><p>Demo text...</p></div></section>
+  <section id="sessions" class="section" data-aos="fade-up"><div class="container"><h2>Sessions</h2><p>Demo text...</p></div></section>
+  <section id="speakers" class="section" data-aos="fade-up"><div class="container"><h2>Speakers</h2><p>Demo text...</p></div></section>
+  <section id="volunteer" class="section" data-aos="fade-up"><div class="container"><h2>Volunteer</h2><p>Demo text...</p></div></section>
+  <section id="resources" class="section" data-aos="fade-up"><div class="container"><h2>Resources</h2><p>Demo text...</p></div></section>
+  <section id="membership" class="section" data-aos="fade-up"><div class="container"><h2>Membership</h2><p>Demo text...</p></div></section>
+  <section id="blog" class="section" data-aos="fade-up"><div class="container"><h2>Blog</h2><p>Demo text...</p></div></section>
+  <section id="ambassador" class="section" data-aos="fade-up"><div class="container"><h2>Ambassador</h2><p>Demo text...</p></div></section>
+  <section id="sponsors" class="section" data-aos="fade-up"><div class="container"><h2>Sponsors</h2><p>Demo text...</p></div></section>
+
+  <!-- Contact Us Section -->
+  <section id="contact" class="section contact" data-aos="fade-up">
+    <div class="container contact-container">
+      <div class="contact-form-wrapper">
+        <h2>Contact Us</h2>
+        <form class="contact-form">
+          <input type="text" placeholder="Name" required>
+          <input type="email" placeholder="Email" required>
+          <textarea placeholder="Message" required></textarea>
+          <button type="submit" class="btn">Send Message</button>
+        </form>
+      </div>
+      <div class="contact-social">
+        <h3>Connect with Us</h3>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-facebook-f"></i>Facebook</a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+          <a href="#"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer" data-aos="fade-up">
+    <div class="container footer-content">
+      <p>&copy; 2025 Your Community Name. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
