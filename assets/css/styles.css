@@ -1,0 +1,260 @@
+/* Navbar */
+#mainNavbar {
+  background: transparent;
+  transition: background 0.3s ease, padding 0.3s ease;
+  padding: 1rem 0;
+}
+#mainNavbar.scrolled {
+  background: #FF9933;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  padding: 0.5rem 0;
+}
+#mainNavbar .navbar-brand img {
+  max-height: 100px;
+  transition: max-height 0.3s ease;
+}
+#mainNavbar.scrolled .navbar-brand img {
+  max-height: 45px;
+}
+
+/* Hamburger menu color and alignment */
+.navbar-collapse.show {
+  background-color: #FF9933;
+  padding: 1rem;
+}
+.navbar-collapse.show .nav-link {
+  color: #fff;
+  font-weight: bold;
+  text-align: right;
+}
+
+/* Hero Section */
+.hero {
+  min-height: 100vh;
+  background: linear-gradient(to bottom, #FF9933 0%, #FFFFFF 80%);
+  position: relative;
+  overflow: hidden;
+}
+.hero-img {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  max-height: 80vh;
+  object-fit: contain;
+}
+.hero-strip {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+/* Typed Cursor */
+.cursor {
+  display: inline-block;
+  animation: blink 0.7s infinite;
+}
+@keyframes blink {
+  0%, 50% { opacity: 1; }
+  50.01%, 100% { opacity: 0; }
+}
+
+/* CTA Button */
+.btn-hero {
+  background: #002147;
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  border-radius: 50px;
+  transition: transform 0.2s ease;
+}
+.btn-hero:hover {
+  transform: scale(1.05);
+}
+
+/* Mobile overrides */
+@media (max-width: 991px) {
+  .hero .row {
+    flex-direction: column;
+  }
+  .hero-img {
+    display: block;
+    max-height: 40vh;
+    margin: 0 auto 2rem;
+  }
+
+  /* Remove left/right animations */
+  [data-aos="fade-left"],
+  [data-aos="fade-right"] {
+    opacity: 1 !important;
+    transform: translateY(40px) !important;
+  }
+  [data-aos="fade-left"].aos-animate,
+  [data-aos="fade-right"].aos-animate {
+    opacity: 1 !important;
+    transform: translateY(0px) !important;
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  }
+}
+
+/* Resource Table Centered */
+#resources table {
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+/* Improve mobile readability */
+@media (max-width: 767px) {
+  #resources table {
+    font-size: 0.9rem;
+  }
+}
+
+/* Section spacers */
+#looking-ahead ul {
+  padding-left: 0;
+  list-style: none;
+  font-size: 1.1rem;
+}
+
+/* Testimonials */
+.testimonials-swiper {
+  width: 100%;
+}
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+}
+.testimonial-card {
+  width: 250px;
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  opacity: 0;
+  transform: translateX(-30px);
+  transition: transform 0.5s ease, opacity 0.5s ease;
+}
+.testimonial-card.reveal {
+  opacity: 1;
+  transform: translateX(0);
+}
+.testimonial-photo {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #FF9933;
+}
+.quote-icon {
+  font-size: 1.5rem;
+  color: #FF9933;
+}
+.testimonial-text {
+  font-size: 0.95rem;
+}
+/* Pagination dots */
+.swiper-pagination-bullet {
+  background: #6C757D;
+  opacity: 0.5;
+}
+.swiper-pagination-bullet-active {
+  background: #002147;
+  opacity: 1;
+}
+
+/* Responsive */
+@media (min-width: 992px) {
+  .testimonials-swiper .swiper-slide {
+    width: auto;
+  }
+}
+
+/* Membership Section */
+#membership h2 {
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 1rem;
+}
+#membership .list-unstyled li {
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 0.75rem;
+}
+#membership .list-unstyled li i {
+  font-size: 1.2rem;
+  margin-right: 0.5rem;
+}
+#membership .btn-hero {
+  font-size: 1.1rem;
+  padding: 0.75rem 2rem;
+}
+
+/* Student Ambassador Section */
+#student-ambassador h2,
+#student-ambassador h3 {
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 1rem;
+}
+#student-ambassador .list-unstyled li {
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 0.75rem;
+}
+#student-ambassador .list-unstyled li i {
+  font-size: 1.25rem;
+  vertical-align: middle;
+  margin-right: 0.5rem;
+}
+/* Ambassador testimonial swiper */
+.ambassador-swiper .swiper-slide {
+  display: flex;
+  justify-content: center;
+}
+.ambassador-swiper .testimonial-card {
+  width: 250px;
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  opacity: 0;
+  transform: translateX(-30px);
+  transition: transform 0.5s ease, opacity 0.5s ease;
+}
+.ambassador-swiper .testimonial-card.reveal {
+  opacity: 1;
+  transform: translateX(0);
+}
+/* Reuse existing photo and icon styles from testimonials */
+/* Sponsor tier carousel */
+.sponsor-swiper .swiper-slide {
+  width: 150px;
+  display: flex;
+  justify-content: center;
+}
+.sponsor-swiper img {
+  filter: grayscale(30%);
+  transition: filter 0.3s ease;
+}
+.sponsor-swiper img:hover {
+  filter: none;
+}
+/* Sponsor testimonial reuse existing testimonial styles */
+
+/* Contact & Social */
+#contact-social .social-icon {
+  font-size: 2rem;
+  transition: transform 0.3s;
+}
+#contact-social .social-icon:hover {
+  transform: scale(1.2);
+}
+/* Social brand colors */
+.social-icon.linkedin:hover { color: #0077B5; }
+.social-icon.twitter:hover  { color: #1DA1F2; }
+.social-icon.whatsapp:hover { color: #25D366; }
+.social-icon.github:hover   { color: #171515; }
+.social-icon.instagram:hover{ color: #E4405F; }
+
+/* Quick-links */
+.quick-links a:hover {
+  text-decoration: underline;
+}
